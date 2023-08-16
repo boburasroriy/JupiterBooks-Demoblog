@@ -8,7 +8,7 @@ $id = $_GET["id"];
 $statement = $pdo->prepare("SELECT * FROM posts where id=?");
 $statement -> execute([$id]);
 $post = $statement ->fetch();
-var_dump($post)
+
 
 ?>
 <div class="container mt-5 ">

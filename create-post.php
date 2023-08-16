@@ -15,6 +15,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         'body' => $body
     ]);
     header("Location: blog.php");
+    exit;
     $_SESSION['Post was created'] = 'Post was created';
 }
 

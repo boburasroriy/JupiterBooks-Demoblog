@@ -56,7 +56,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["DELTE"])){
               <p class="card-text"><?php echo $post['body'] ?></p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                <a href="/edit-post.php?id=<?php echo $post['id']?>"  class="btn btn-sm btn-outline-secondary">Edit</a>
+
+                
                 <form method ="POST" action="">
                     <input type="hidden" name= "post_id" value="<?= $post["id"]?>">
                     <input type="hidden" name="DELTE">
