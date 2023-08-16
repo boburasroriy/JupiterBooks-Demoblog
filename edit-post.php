@@ -1,7 +1,6 @@
 <?php 
 $title = 'Edit post';
-require "includes/navbar.php";
-require 'includes/header.php';
+
 require 'database.php';
 
 $id = $_GET['id'];
